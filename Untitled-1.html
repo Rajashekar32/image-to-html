@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+        }
+        .left {
+            width: 40%;
+            padding-right: 20px;
+        }
+        .left img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .thumbnails {
+            display: flex;
+            margin-top: 10px;
+        }
+        .thumbnails img {
+            width: 60px;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        .thumbnails img:hover {
+            border: 2px solid #333;
+        }
+        .right {
+            width: 60%;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .rating {
+            color: #ffcc00;
+            font-size: 16px;
+        }
+        .price {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .discount {
+            text-decoration: line-through;
+            color: gray;
+            margin-left: 10px;
+        }
+        .percentage {
+            color: red;
+            margin-left: 10px;
+        }
+        .description {
+            margin-top: 10px;
+            color: gray;
+        }
+        .colors, .sizes {
+            margin-top: 20px;
+        }
+        .colors span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        .colors .selected {
+            border: 2px solid black;
+        }
+        .gray { background-color: gray; }
+        .blue1 { background-color: #4285F4; }
+        .blue2 { background-color: #3B5998; }
+        .sizes button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: 1px solid black;
+            background: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .sizes .selected {
+            background: black;
+            color: white;
+        }
+        .cart {
+            margin-top: 20px;
+        }
+        .cart button {
+            padding: 15px;
+            width: 100%;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .cart button:hover {
+            background: darkgray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left">
+        <header>
+            <h1>SHOP.CO</h1>
+        </header>
+        <img src="C:\Users\munag\Downloads\image_169.jpg" alt="ONE LIFE GRAPHIC T-SHIRT">
+        <div class="thumbnails">
+            <img src="C:\Users\munag\Downloads\image_169.jpg" alt="Thumbnail 1">
+            <img src="C:\Users\munag\Downloads\image_169.jpg" alt="Thumbnail 2">
+            <img src="C:\Users\munag\Downloads\image_169.jpg" alt="Thumbnail 3">
+        </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right">
+        <div class="title">ONE LIFE GRAPHIC T-SHIRT</div>
+        <div class="rating">★★★★★ 4.5/5</div>
+        <div class="price">
+            <strong>$260</strong> <span class="discount">$300</span> <span class="percentage">-40%</span>
+        </div>
+        <div class="description">
+            This graphic t-shirt is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.
+        </div>
+
+        <div class="colors">
+            <p><strong>Select Colors:</strong></p>
+            <span class="gray selected"></span>
+            <span class="blue1"></span>
+            <span class="blue2"></span>
+        </div>
+
+        <div class="sizes">
+            <p><strong>Choose Size:</strong></p>
+            <button>Small</button>
+            <button>Medium</button>
+            <button class="selected">Large</button>
+            <button>X-Large</button>
+        </div>
+
+      
+              
+        <div class="cart">
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>-+
